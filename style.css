@@ -1,0 +1,113 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(185deg, rgb(162, 97, 205), rgb(220, 208, 133));
+}
+
+.todo-app {
+  border: 4px solid black;
+  max-width: 500px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.todo-app h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.todo-app h2 img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.row input {
+  border: 3px solid #0c0b0b;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  flex-grow: 1;
+}
+
+.row button {
+  border: 3px solid black;
+  padding: 10px 30px;
+  background-color: rgb(37, 139, 5);
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.row button:hover {
+  background-color: rgb(117, 44, 44);
+}
+
+#list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#list-container li {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+#list-container li:hover {
+  background-color: #9eb9d4;
+}
+
+#list-container li .status-icon {
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+#list-container li .uncheck {
+  background-image: url("uncheck.png");
+}
+
+#list-container li .check {
+  background-image: url("check.png");
+}
+
+#list-container li.checked {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+#list-container li span {
+  background: #dc3545;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  margin-left: auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#list-container li span:hover {
+  background: #c82333;
+}
